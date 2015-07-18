@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<Operations versionXML="1.0">
+<Produit nameProduit="CTFG"> 
+    <OperationsConfiguration>
+    </OperationsConfiguration>
+
+    <BaseCommune>
+    </BaseCommune>
+
+    <CodeProduits>
+    </CodeProduits>
+
+    <ReglesCode>
+    </ReglesCode>
+</Produit> 
+</Operations>

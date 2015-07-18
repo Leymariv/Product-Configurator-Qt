@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+	<Produits versionXML="1.0">
+	  <Produit name="TAHNZ" lienPdf="TAHNZ.pdf" lienImg="TPG.jpeg" tag="THZ">
+		<Description texte = "Le TAHNZ est une téléalarme dialoguant par protocole HNZ. Il permet de transmettre des alarmes d’un poste source et assure ainsi une conduite minimale en cas de perte des liaisons de communication habituelles."/>
+		<IHM nb="2">
+
+		  <Section name="Type de Téléalarme">
+		<ListeDeroulante name="Adaptation pour option Radio">
+		  <Champ champValue="Téléalarme GSM" code="codeGSM" position="0" codeValue="0"/>
+		  <Champ champValue="Téléalarme GSM - Radio adaptateur Alcatel" code="codeAlcatel" position="0" codeValue="1"/>
+		  <Champ champValue="Téléalarme GSM - Radio adaptateur Sagem" code="codeSagem" position="0" codeValue="2"/>  
+		  <Champ champValue="Téléalarme GSM - Radio adaptateur Motorola" code="codeMotorola" position="0" codeValue="3"/>
+		</ListeDeroulante>
+		  </Section> 
+
+		  <Section name="Options">
+		<OptionCocher name="Pack antenne GSM omnidirectionnelle et cordon 20m"
+				  code="codePack" position="1" codeValue="3"/>
+		<OptionCocher name="Activation des LEDs"
+				  code="codeLED" position="4" codeValue="1"/>
+		  </Section> 
+
+		</IHM>
+		
+		<Codes>
+		 </Codes>
+		
+		<Regles>	
+		<regle name="rgRadio1" code1="codeAlcatel" operande="OR" code2="codeSagem">
+		</regle>
+		<regle name="rgRadio" code1="rgRadio1" operande="OR" code2="codeMotorola">
+		</regle>
+		
+			
+		</Regles>
+		
+	  </Produit>
+	</Produits>

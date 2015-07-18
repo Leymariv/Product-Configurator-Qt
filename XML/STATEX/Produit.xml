@@ -1,0 +1,189 @@
+<?xml version="1.0"?>
+	<Produits versionXML="1.0">
+	  <Produit name="STATEX" lienPdf="STATEX.pdf" lienImg="STATEX.jpeg" tag="ST">
+		<Description texte = "Le CDE FG est un consignateur d’état de dernière génération 
+	conforme aux recommandations du DICOT EDF, conçu pour être utilisé dans des applications 
+	de petite comme de grosse capacité fonctionnant en milieu électrique perturbé. 
+	Il se présente sous la forme d’un rack 6U - 19”.
+	Sa connectique est de type DIN41612 forme D 32pts.
+	La même base accepte indifféremment un mixte de polarités en 48V ou 125V. Pour obtenir un 
+	taux d’utilisation maximal des TS, il peut être doté d’une table de brassage.."/>
+		<IHM nb="5">
+
+		  <Section name="Alimentation">
+		<ListeDeroulante name="Tension Alimentation">
+		  <Champ champValue="48" code="codeAlim48" position="0" codeValue="0"/>
+		  
+		  <Champ champValue="125" code="codeAlim125" position="0" codeValue="1"/>
+		  
+		</ListeDeroulante>
+		<OptionCocher name="Option Alimentations Redondantes"
+				  code="codeRedAlim" position="1" codeValue="1"/>
+		
+		  </Section> 
+
+		  <Section name="Rack principal">
+		<ListeDeroulante name="Cartes 48TS 48V"
+				 code="codeRP48TS48V" position="2">
+		  <Champ champValue="1"/>
+		  <Champ champValue="2"/>
+		  <Champ champValue="3"/>
+		  <Champ champValue="4"/>
+		  <Champ champValue="5"/>
+		  <Champ champValue="6"/>
+		  <Champ champValue="7"/>
+		  <Champ champValue="8"/>
+		  <Champ champValue="9"/>
+		  <Champ champValue="10"/>
+		  <Champ champValue="11"/>
+		  <Champ champValue="12"/>
+		  <Champ champValue="13"/>
+		  <Champ champValue="14"/>  
+		  <Champ champValue="15"/>  
+		</ListeDeroulante>
+		<ListeDeroulante name="Cartes 48TS 125V"
+				 code="codeRP48TS125V" position="3">
+		  <Champ champValue="1"/>
+		  <Champ champValue="2"/>
+		  <Champ champValue="3"/>
+		  <Champ champValue="4"/>
+		  <Champ champValue="5"/>
+		  <Champ champValue="6"/>
+		  <Champ champValue="7"/>
+		  <Champ champValue="8"/>
+		  <Champ champValue="9"/>
+		  <Champ champValue="10"/>
+		  <Champ champValue="11"/>
+		  <Champ champValue="12"/>
+		  <Champ champValue="13"/>
+		  <Champ champValue="14"/>  
+		  <Champ champValue="15"/>
+		</ListeDeroulante>
+		  </Section> 
+
+		  <Section name="Rack d'extension">
+		<ListeDeroulante name="Cartes 48TS 48V"
+				 code="codeRE48TS48V" position="4">
+		  <Champ champValue="1"/>
+		  <Champ champValue="2"/>
+		  <Champ champValue="3"/>
+		  <Champ champValue="4"/>
+		  <Champ champValue="5"/>
+		  <Champ champValue="6"/>
+		  <Champ champValue="7"/>
+		  <Champ champValue="8"/>
+		  <Champ champValue="9"/>
+		  <Champ champValue="10"/>
+		  <Champ champValue="11"/>
+		  <Champ champValue="12"/>
+		  <Champ champValue="13"/>
+		  <Champ champValue="14"/>  
+		  <Champ champValue="15"/>
+		</ListeDeroulante>
+		<ListeDeroulante name="Cartes 48TS 125V"
+				 code="codeRE48TS125V" position="5">
+		  <Champ champValue="1"/>
+		  <Champ champValue="2"/>
+		  <Champ champValue="3"/>
+		  <Champ champValue="4"/>
+		  <Champ champValue="5"/>
+		  <Champ champValue="6"/>
+		  <Champ champValue="7"/>
+		  <Champ champValue="8"/>
+		  <Champ champValue="9"/>
+		  <Champ champValue="10"/>
+		  <Champ champValue="11"/>
+		  <Champ champValue="12"/>
+		  <Champ champValue="13"/>
+		  <Champ champValue="14"/>  
+		  <Champ champValue="15"/>
+		</ListeDeroulante>
+		  </Section> 
+
+		  <Section name="Configuration Cartes">
+		<OptionCocher name="Revoie du commun en Fond de panier" 
+				  code="codefdp" position="6" codeValue="1"/>
+		<OptionCocher name="Config en 32+16 TS"
+				  code="" position="" codeValue=""/>
+		  </Section> 
+
+		  <Section name="Kit de maintenance">
+		<OptionCocher name="Une carte 48TS 48V" 
+				  code="codeKTcarte48V" position="7" codeValue="1"/>
+		<OptionCocher name="Une carte 48TS 125V" 
+				  code="codeKTcarte125V" position="8" codeValue="1"/>
+		<OptionCocher name="Alimentation supplémentaire"
+				  code="codeKTalim" position="9" codeValue="1"/>
+		<OptionCocher name="Une carte UCC"
+				  code="codeKTucc" position="10" codeValue="1"/>
+		<OptionCocher name="Une carte 8TC"
+				  code="codeKT8tc" position="11" codeValue="1"/>
+		  </Section>
+		
+		</IHM>
+		
+		<Codes><!--Création de nouveaux codes. Les operandes +, -, * et / seront arrondis au suppérieur, et interagierons avec LA VALEUR DU CODE. 
+				Si on veut créer une régle à partir de codes existants, cette section est inutile
+				-->
+		 <code name="codeSumRP" code1="codeRP48TS48V" operation="+" code2="codeRP48TS125V"/><!--type Operation-->
+
+		 <code name="codeSumRE" code1="codeRE48TS48V" operation="+" code2="codeRE48TS125V"/>
+		 
+		 <!-- <code name="codeSumCartes" code1="codeSumRE" operation="+" code2="codeSumRP"/> EXEMPLE utilisation de codes qu'on vient de créer -->
+		 
+		 </Codes>
+		
+		<Regles><!--3 formats pour les régles: 
+			-Soit c'est une régle entre deux codes (régle operande), dans quel cas les champs auront pour nom : code1 et code2 (régles utilisables) => "operandes"" possibles: SUP >,INF <, EGAL= (interagirons sur la valeur du code)
+			-Soit c'est une régle entre deux codes (régle operande), dans quel cas les champs auront pour nom : code1 et code2 (régles utilisables) => "operandes"" possibles: ET, OU (interagiront avec le fait que le code est vrai ou faux).
+			-Soit c'est une régle entre un code et un nombre ou un code (régle comparaison), dans quel cas les champs auront pour nom : code et nombre	=> ""comparaisons" possibles: <,>,=
+		-->
+		
+		
+		<regle name="rgRP15" codeValue1="codeSumRP" comparaison="SUP" nombre="15"><!--type CompNbr-->
+		<Message text="Impossible de sélectionner plus de 15 cartes dans le rack principal"/>
+		</regle>
+		<regle name="rgRE15" codeValue1="codeSumRE" comparaison="SUP" nombre="15"><!--type CompNbr-->
+		<Message text="Impossible de sélectionner plus de 15 cartes dans le rack d'extension"/>
+		</regle>
+		
+		<!--Regles pour ne pas avoir de RE si on a pas au moins 15 cartes 48V ou 15 cartes 125V-->
+		<regle name="rg1NotRPnotRE" codeValue1="codeSumRP" comparaison="INF" nombre="15">
+		</regle>
+		<regle name="rgREnonVide" codeValue1="codeSumRE" comparaison="SUP" nombre="0">
+		</regle>
+		<regle name="rgNotRPnotRE" code1="rg1NotRPnotRE" operande="AND" code2="rgREnonVide">
+		<Message text="Impossible d'avoir un rack d'extension alors que le rack principal n'est pas rempli"/>
+		</regle>
+		
+		<regle name="rgRP48Vide" codeValue1="codeRE48TS48V" comparaison="EGAL" nombre="0"><!--Utilisé dans le fichier marche.xml-->
+		</regle>
+		
+		<regle name="rgRP127Vide" codeValue1="codeRE48TS125V" comparaison="EGAL" nombre="0"><!--Utilisé dans le fichier marche.xml-->
+		</regle>
+		
+		
+		<!--EXEMPLES D'AUTRES REGLES
+		
+		<regle name="rgnoGSMnoRadio" code1="rgRadio" operande="NOT OR NOT" code2="codeGSM"> REGLE AVEC DES NOT
+			<Message text="Veuillez cocher l'option Radio pour choisir un type d'apadtateur."/>
+		</regle> 
+		
+		
+		<regle name="rg1RedRP" codeValue1="codeSumRP" comparaison="EGAL" codeValue2="codeRP48TS48V"> type CompCode
+		</regle>
+		<regle name="rg2RedRP" codeValue1="codeSumRP" comparaison="SUP" nombre="0"> type CompNbr
+		</regle>
+		<regle name="rg3RedRP" code1="rg2RedRP" operande="AND" code2="codeRedAlim">
+		<Message text="Impossible de sélectionner l'option redondance alimentation avec uniquement des cartes 48V dans le rack principal."/>
+		</regle>
+		
+		<regle name="rgKtAlimRedAlim" code1="codeRedAlim" operande="AND" code2="codeKTalim">
+		<Message text="Impossible de sélectionner une alimentation redondante et une alimentation de maintenance."/>
+		</regle>
+		-->
+	
+		
+		</Regles>
+	  </Produit>
+	</Produits>

@@ -1,0 +1,208 @@
+<?xml version="1.0"?>
+<Nomenclature versionXML="1.0">
+<Produit nameProduit="CDEFG"> 
+    <ComposantsConfiguration>
+      <RefFGS>
+	<Composant id="01" name="Cordon croisé Ethernet" refFG="AY00008" prixU="4.31"/>
+	<Composant id="02" name="Cordon série croisé" refFG="CC10021.COMP" prixU="6.70"/>
+	<Composant id="03" name="Cordon téléphonique CDE FG" refFG="CC10012.COMP" prixU="5.63"/>
+	<Composant id="04" name="Cordon alimentation externe" refFG="CC29040.COMP" prixU="17.05"/>
+	<Composant id="05" name="Cordon alimentation interne" refFG="CC29039.COMP" prixU="8.60"/>
+	<Composant id="06" name="Fil de terre L=165 mm pour Face arrière" refFG="CC29008.COMP" prixU="0.19"/>
+	<Composant id="07" name="Faisceau de liaison fond de panier" refFG="CC29041.COMP" prixU="5.10"/>
+	<Composant id="08" name="Carte 8S" refFG="8S" prixU="775.00"/>
+	<Composant id="09" name="Carte Alimentation 125V" refFG="AL1 ou AV1" prixU="743.00"/>
+	<Composant id="10" name="Carte Alimentation 48V" refFG="AL4 ou AV4" prixU="743.00"/>
+	<Composant id="11" name="Carte UCC" refFG="MC50004.COMP" prixU="1710.00"/>
+	<Composant id="12" name="Carte fille 2LS+Eth" refFG="MC50005.COMP" prixU="298.00"/>
+	<Composant id="13" name="Carte fille 2LS+Modem" refFG="MC50006.COMP" prixU="320.00"/>
+	<Composant id="14" name="Carte Fond de panier" refFG="PT00009.COMP" prixU="458.00"/>
+	<Composant id="15" name="Carte Redondance alim" refFG="RAL" prixU="137.00"/>
+	<Composant id="16" name="Carte 48 TS 48V" refFG="TS4" prixU="597.00"/>
+	<Composant id="17" name="Carte 48 TS 125V" refFG="TS1" prixU="597.00"/>
+	<Composant id="18" name="Fiche fem à wrapper DIN41612 48pts" refFG="ER12803.COMP" prixU="4.09"/>
+	<Composant id="19" name="Rack EUROPAC PRO 6U-84F-P355" refFG="SU2006.COMP" prixU="255.71"/>     
+	<Composant id="20" name="Kit 2 Charnières" refFG="SS00001.COMP" prixU="5.49"/> 
+	<Composant id="21" name="Poignée extracteur de cartes 6U" refFG="SS20009.COMP" prixU="24.81"/>    
+	<Composant id="22" name="Bande d'adaptation 63F" refFG="SS33004.COMP" prixU="3.60"/>  
+	<Composant id="23" name="FAV cartes 6U rack principal" refFG="SU10026.COMP" prixU="110.00"/>   
+	<Composant id="24" name="Tôlerie Alimentation sérigraphiée" refFG="SU10032.COMP" prixU="69.50"/>
+	<Composant id="25" name="Cache pour face avant 6U" refFG="SU10027.COMP" prixU="5.60"/>
+	<Composant id="26" name="Cache emplacement RS232 UCC" refFG="SU10028.COMP" prixU="7.90"/>   
+	<Composant id="27" name="FAV UCC sérigraphiée" refFG="SU10029.COMP" prixU="59.90"/> 
+	<Composant id="28" name="FAV 3U1F-G1" refFG="SU10030.COMP" prixU="7.85"/>   
+	<Composant id="29" name="FAV 3U4F-P2" refFG="SU10031.COMP" prixU="7.90"/>   
+	<Composant id="30" name="FAR CDE rack principal" refFG="ST50015.COMP" prixU="25.50"/>  
+	<Composant id="31" name="Vis tête fendue pour inserts" refFG="SS70001" prixU="0.01"/> 
+      </RefFGS>
+      <AchatAffaire><!--Ici il faut faire figurer le prix total du composant sur affaire, si il est accompagné
+					d'une opération de main d'oeuvre, alors le prix unitaire devra en rendre compte-->
+	<Composant id="32" name="Cordon téléphonique pour PC" fournisseur="ACTILOG" ref="D01T10085-72-A" prixU="10.00"/>
+	<Composant id="33" name="Cordon alim interne rack principal pour extension" fournisseur="ACTILOG" ref="D01T10085-72-B" prixU="10.00"/>
+	<Composant id="34" name="Cordon alim interne rack extension" fournisseur="ACTILOG" ref="D01T10085-72-A" prixU="10.00"/>
+	<Composant id="35" name="Cordon des liaisons série rack extension" fournisseur="HARTING" ref="D01T100" prixU="50.00"/>
+	<Composant id="36" name="Carte fille extension UCC" fournisseur="GSI / AZH" ref="D01T10067-70-A" prixU="300.00"/>
+	<Composant id="37" name="Poignée haute extraction UCC" fournisseur="SCHROFF" ref="D00067-70-A" prixU="3.00"/>
+	<Composant id="38" name="Poignée basse extraction Alim" fournisseur="SCHROFF" ref="D00067-70-B" prixU="3.00"/>
+	<Composant id="39" name="FAV cartes 6U rack extension" fournisseur="SERIGA" ref="D01T10070-70-121" prixU="93.90"/>
+	<Composant id="40" name="FAV 6U - 9TE rack d'extension" fournisseur="SERIGA" ref="D01T10070-70-123-A" prixU="37.80"/>
+	<Composant id="41" name="FAR CDE rack principal" fournisseur="PEYRE" ref="D01T10070-70-122-A" prixU="58.90"/>
+	<Composant id="42" name="Inserts métalliques" fournisseur="SCHROFF" ref="21100-660" prixU="0.30"/>
+	<Composant id="43" name="Vis tête moletée pour inserts" fournisseur="SCHROFF" ref="21101-749" prixU="1.01"/>
+	<Composant id="44" name="Vis 2,5 torx L=7mm" fournisseur="SCHROFF" ref="24560-147" prixU="0.04"/>
+	<Composant id="45" name="Vis 2,5 torx à gorge L=12,3mm" fournisseur="SCHROFF" ref="21101-782" prixU="0.11"/>
+	<Composant id="46" name="Vis 2,5 L=10mm" fournisseur="SCHROFF" ref="24560-148" prixU="0.04"/>
+	<Composant id="47" name="FAR CDE rack extension" fournisseur="PEYRE" ref="D01T10070-70-122-A" prixU="58.90"/>
+	<Composant id="48" name="Equerre pour carte" fournisseur="SCHROFF" ref="60807-181" prixU="0.66"/>
+      </AchatAffaire>
+    </ComposantsConfiguration>
+
+    <BaseCommune>
+      <Composant id="01" quantité="1"/>
+      <Composant id="02" quantité="1"/>
+      <Composant id="03" quantité="1"/>
+      <Composant id="04" quantité="1"/>
+      <Composant id="05" quantité="1"/>
+      <Composant id="06" quantité="1"/>
+      <Composant id="07" quantité="1"/>
+      <Composant id="08" quantité="1"/>
+      <Composant id="11" quantité="1"/>
+      <Composant id="12" quantité="1"/>
+      <Composant id="13" quantité="1"/>
+      <Composant id="14" quantité="1"/>
+      <Composant id="15" quantité="1"/>
+      <Composant id="19" quantité="1"/>
+      <Composant id="20" quantité="1"/>
+      <Composant id="37" quantité="1"/>
+      <Composant id="38" quantité="1"/>
+      <Composant id="21" quantité="1"/>
+      <Composant id="23" quantité="1"/>
+      <Composant id="24" quantité="1"/>
+      <Composant id="25" quantité="15"/>
+      <Composant id="26" quantité="1"/>
+      <Composant id="27" quantité="1"/>
+      <Composant id="28" quantité="2"/>
+      <Composant id="29" quantité="1"/>
+      <Composant id="30" quantité="1"/>
+      <Composant id="42" quantité="19"/>
+      <Composant id="31" quantité="16"/>
+      <Composant id="42" quantité="3"/>
+      <Composant id="44" quantité="65"/>
+      <Composant id="45" quantité="4"/>
+      <Composant id="46" quantité="24"/>
+      <Composant id="48" quantité="2"/>	
+    </BaseCommune>
+
+    <CodeProduits>
+      <code name="codeAlim48">
+	<Composant id="10" action="add" quantité="1"/>
+      </code>
+      <code name="codeAlim125">
+	<Composant id="09" action="add" quantité="1"/>
+      </code>
+      <code name="codeRedAlim">
+	<Composant id="24" action="add" quantité="1"/>
+	<Composant id="29" action="remove" quantité="1"/>
+	<Composant id="42" action="remove" quantité="1"/>
+	<Composant id="31" action="remove" quantité="1"/>
+      </code>
+      <code name="codeRP48TS48V"><!--La valeur x signifie qu'on ajoute la valeur du champ -->
+	<Composant id="16" action="add" quantité="x"/>
+	<Composant id="25" action="remove" quantité="x"/>
+	<Composant id="44" action="remove" quantité="2*x"/><!--Seules  expressions possibles: int (+;-;*;∕;) x "-->
+	<Composant id="48" action="add" quantité="2*x"/>
+      </code>
+      <code name="codeRP48TS125V">
+	<Composant id="17" action="add" quantité="x"/>
+	<Composant id="25" action="remove" quantité="x"/>
+	<Composant id="44" action="remove" quantité="2*x"/>
+	<Composant id="48" action="add" quantité="2*x"/>
+      </code>
+      <code name="codeRE48TS48V">
+	<Composant id="16" action="add" quantité="x"/>
+	<Composant id="25" action="remove" quantité="x"/>
+	<Composant id="44" action="remove" quantité="2*x"/>
+	<Composant id="48" action="add" quantité="2*x"/>
+      </code>
+      <code name="codeRE48TS125V">
+	<Composant id="17" action="add" quantité="x"/>
+	<Composant id="25" action="remove" quantité="x"/>
+	<Composant id="44" action="remove" quantité="2*x"/>
+	<Composant id="48" action="add" quantité="2*x"/>
+      </code>
+      <code name="codefdp">
+	<Composant id="18" action="add" quantité="15"/>
+	<Composant id="22" action="add" quantité="2"/>
+      </code>
+      <code name="codeKTcarte48V">
+	<Composant id="16" action="add" quantité="1"/>
+	<Composant id="44" action="add" quantité="2"/>
+	<Composant id="48" action="add" quantité="2"/>
+      </code>
+      <code name="codeKTcarte125V">
+	<Composant id="17" action="add" quantité="1"/>
+	<Composant id="44" action="add" quantité="2"/>
+	<Composant id="48" action="add" quantité="2"/>
+      </code>
+      <code name="codeKTalim">
+	<Composant id="24" action="add" quantité="1"/>
+	<Composant id="42" action="add" quantité="2"/>
+	<Composant id="31" action="add" quantité="2"/>
+      </code>
+      <code name="codeKTucc">
+	<Composant id="11" action="add" quantité="1"/>
+	<Composant id="26" action="add" quantité="1"/>
+	<Composant id="27" action="add" quantité="1"/>
+      </code>
+      <code name="codeKT8tc">
+	<Composant id="08" action="add" quantité="1"/>
+	<Composant id="44" action="add" quantité="2"/>
+	<Composant id="48" action="add" quantité="2"/>	
+      </code>      
+    </CodeProduits>
+    
+
+    <ReglesCode><!-- Ici rélge1 et régle2 permettent d'ajouter la bonne carte alim lors de la sélection par l'utilisateur de l'option redondence alim-->
+      <regle name="rg1" code1="codeAlim48" operande="AND" code2="codeRedAlim">
+	<Composant id="10" action="add" quantité="1"/>
+      </regle>
+      <regle  name="rg2" code1="codeAlim125" operande="AND" code2="codeRedAlim">
+	<Composant id="09" action="add" quantité="1"/>
+      </regle>
+      <regle  name="rg3" code1="codeRE48TS125V" operande="OR" code2="codeRE48TS48V">
+	<Composant id="34" action="add" quantité="1"/>
+	<Composant id="33" action="add" quantité="1"/>
+	<Composant id="35" action="add" quantité="1"/>
+	<Composant id="36" action="add" quantité="1"/>
+	<Composant id="14" action="add" quantité="1"/>
+	<Composant id="19" action="add" quantité="1"/>
+	<Composant id="20" action="add" quantité="1"/>
+	<Composant id="39" action="add" quantité="1"/>
+	<Composant id="40" action="add" quantité="1"/>
+	<Composant id="47" action="add" quantité="1"/>
+	<Composant id="25" action="add" quantité="16"/>
+	<Composant id="44" action="add" quantité="64"/>
+      </regle>
+	  <regle  name="rg4" code1="codeRP48TS125V" operande="OR" code2="codeRP48TS48V">
+      </regle>
+	  <regle  name="rg5" code1="rg4" operande="AND" code2="codefdp">
+	   </regle>
+      <regle  name="rg6" code1="rg3" operande="AND" code2="codefdp">
+	  <Composant id="18" action="add" quantité="16"/>
+	  <Composant id="22" action="add" quantité="2"/>
+      </regle>
+      <regle  name="rg7" code1="codeAlim48" operande="AND" code2="codeKTalim">
+	<Composant id="10" action="add" quantité="1"/>
+      </regle>
+      <regle  name="rg8" code1="codeAlim125" operande="AND" code2="codeKTalim">
+	<Composant id="09" action="add" quantité="1"/>
+      </regle>
+	  
+	  <!--<regle name="rg3" code1="CodeALi" operande="AND" code2="codeQLiPP5"> Type de régle en "bool ET/OU codeX => Composant qte=x"
+			<Composant id="28"  action="add" quantité="x"/>
+		</regle> -->
+		
+    </ReglesCode>
+
+</Produit> 
+</Nomenclature>

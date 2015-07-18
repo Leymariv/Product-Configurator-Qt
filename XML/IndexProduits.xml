@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+	<Produits>
+	  <Produit name="CDEFG" dossier="CDE"/>
+	  <Produit name="Armoire PVH" dossier="PVH"/>
+	  <Produit name="CTFG" dossier="CT"/>
+	  <Produit name="TPG" dossier="TPG"/>
+	  <Produit name="STATEX" dossier="STATEX" />	
+	  <Produit name="COFFRET ITI" dossier="ITI" />		
+	  <Produit name="TAHNZ" dossier="TAHNZ" />
+	</Produits>

@@ -1,0 +1,72 @@
+<?xml version="1.0"?>
+<Marches versionXML="1.0">
+	<Produit nameProduit="CDEFG">
+		<Marche name="ERDF">
+			<Codets>
+				<Codet id="01" name ="CDE en Armoire, raccordement sur bornier,320TS" codeArticle="4903600" prixVenteU="19944.55"/>
+				<Codet id="02" name ="CarteAlimentation 48/127V de rechange" codeArticle="4903603" prixVenteU="976.62"/>
+				<Codet id="03" name ="CarteUC de rechange" codeArticle="4903604" prixVenteU="3574.62"/>
+				<Codet id="04" name ="Carte 8sorties de rechange" codeArticle="4903605" prixVenteU="1017.53"/> 
+				<Codet id="05" name ="Cartes48TS/125V sorties sur bornier" codeArticle="4903606" prixVenteU="1528.85"/>	
+				<Codet id="06" name ="Cartes48TS/48V sorties sur bornier" codeArticle="4903607" prixVenteU="1528.85"/>
+				<Codet id="07" name ="Cartes48TS/125 lot de maintenance" codeArticle="4903608" prixVenteU="961.28"/>
+				<Codet id="08" name ="Cartes48TS/48V lot de maintenance" codeArticle="4903609" prixVenteU="961.28"/>
+				<Codet id="09" name ="Rack CDE supplémentaire" codeArticle="4903602" prixVenteU="1835.64"/>
+			</Codets> 
+			<BaseCommune>
+				<Codet id="01" action="add" quantité="1"/>
+				<Codet id="02" action="remove" quantité="1"/>
+				<Codet id="06" action="remove" quantité="7"/>
+			</BaseCommune>
+			<CodeProduits>
+				  <code name="codeAlim48">
+					<Codet id="02" action="add" quantité="1"/>
+				  </code>
+				  <code name="codeAlim125">
+					<Codet id="02" action="add" quantité="1"/>
+				  </code>
+				  <code name="codeRedAlim">
+					<Codet id="02" action="add" quantité="1"/>
+				  </code>
+				  <code name="codeRP48TS48V">
+					<Codet id="06" action="add" quantité="x"/>
+				  </code>
+				  <code name="codeRP48TS125V">
+					<Codet id="05" action="add" quantité="x"/>
+				  </code>
+				  <code name="codeRE48TS48V">
+					<Codet id="06" action="add" quantité="x"/>
+				  </code>
+				  <code name="codeRE48TS125V">
+					<Codet id="05" action="add" quantité="x"/>
+				  </code>
+				  <code name="codeKTcarte48V">
+					<Codet id="08" action="add" quantité="1"/>
+				  </code>
+				  <code name="codeKTcarte125V">
+					<Codet id="07" action="add" quantité="1"/>
+				  </code>
+				  <code name="codeKTalim">
+					<Codet id="02" action="add" quantité="1"/>	
+				  </code>
+				  <code name="codeKTucc">
+					<Codet id="03" action="add" quantité="1"/>
+				  </code>
+				  <code name="codeKT8tc">
+					<Codet id="04" action="add" quantité="1"/>
+				  </code>      
+			</CodeProduits>	
+			<ReglesCode>
+				<regle name="rg3">
+					<Codet id="09" action="add" quantité="1"/>
+				</regle>
+			</ReglesCode>
+		</Marche>
+		<Marche name="RTE">
+		</Marche>
+	</Produit> 
+</Marches>
+
+
+
+

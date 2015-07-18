@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<Marches versionXML="1.0">
+<Produit nameProduit="CTFG"> 
+    <Marche name="ERDF">
+    </Marche>
+    <Marche name="RTE">
+    </Marche>
+	</Produit> 
+</Marches>

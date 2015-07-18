@@ -1,0 +1,146 @@
+<?xml version="1.0"?>
+<Nomenclature versionXML="1.0">
+<Produit nameProduit="COFFRET ITI"> 
+    <ComposantsConfiguration>
+		<RefFGS>
+			<Composant id="01" name="Carte AE" refFG="D14T19003-1-1" prixU="120"/>
+			<Composant id="02" name="Carte UC" refFG="D14T19003-1-2" prixU="90"/>
+			<Composant id="03" name="Carte SCC" refFG="D14T19003-1-3" prixU="40"/>
+			<Composant id="04" name="Kit câble interne" refFG="D14T19003-1-21" prixU="50"/>
+			<Composant id="05" name="CDROM" refFG="D14T19003-7" prixU="1"/>
+			<Composant id="06" name="Carte RF/DD" refFG="D14T19003-1-5" prixU="78"/>
+			<Composant id="07" name="Coffret 4 voies config vertical ou Horizontal" refFG="D14T19003-1-30" prixU="180"/>
+			<Composant id="08" name="Coffret 8 voies " refFG="D14T19003-2-21" prixU="250"/>
+			<Composant id="09" name="Coffret aérien"  refFG="D14T19003-2-22" prixU="180"/>
+			<Composant id="10" name="Kit de fixation coffret ITI 4 voies" refFG="A" prixU="20"/>
+			<Composant id="11" name="Kit de fixation coffret ITI 8 voies" refFG="A" prixU="20"/>
+			<Composant id="12" name="Kit de fixation coffret ITI aérien " refFG="A" prixU="20"/>
+			<Composant id="13" name="Presse-étoupe" refFG="A" prixU="0.40"/>
+			<Composant id="14" name="Connecteur HAN 10A" refFG="A" prixU="8"/>
+			<Composant id="15" name="Plastron commun" refFG="A" prixU="26.6"/>
+			<Composant id="16" name="Plastron voie N" refFG="A" prixU="3.0"/>
+			<Composant id="17" name="Carte modem RTC" refFG="D14T19003-1-10" prixU="40"/>
+			<Composant id="18" name="Carte modem LS" refFG="D14T19003-1-11" prixU="40"/>
+			<Composant id="19" name="Carte modem Radio" refFG="D14T19003-1-12" prixU="60"/>
+			<Composant id="20" name="Kit câble radio" refFG="D14T19003-1-20" prixU="7.38"/>
+			<Composant id="21" name="Interrupteur de neutralisation" refFG="A" prixU="50"/>
+			<Composant id="22" name="Jeu de 3 tores 500/1A interchangeable" refFG="D11T10125-1-5" prixU="58.11"/>
+			<Composant id="23" name="Liaison interchangeable de 2 mètres pour jeu de 3 tores" refFG="D11T10125-1-3" prixU="14.64"/>
+			<Composant id="24" name="Liaison interchangeable de 5 mètres pour jeu de 3 tores" refFG="D11T10125-1-3" prixU="17.08"/>
+			<Composant id="25" name="Liaison interchangeable de 10 mètres pour jeu de 3 tores" refFG="D11T10125-1-3" prixU="17.89"/>
+			<Composant id="26" name="Liaison interchangeable de 15 mètres pour jeu de 3 tores" refFG="D11T10125-1-3" prixU="25.21"/>
+			<Composant id="27" name="Liaison circuit de tension PPACS interchangeable de longueur 2 mètres" refFG="D11T10125-1-3" prixU="28.95"/>
+			<Composant id="28" name="Liaison circuit de tension PPACS interchangeable de longueur 5 mètres" refFG="D11T10125-1-3" prixU="31.39"/>
+			<Composant id="29" name="Liaison circuit de tension PPACS interchangeable de longueur 10 mètres" refFG="D11T10125-1-3" prixU="35.46"/>
+			<Composant id="30" name="Transformateur Abaisseur 172.5-48 Vac" refFG="A" prixU="25"/>
+			<Composant id="31" name="Transformateur Abaisseur 230-58 Vac" refFG="A" prixU="25"/>
+			
+		</RefFGS>
+		
+		<AchatAffaire>
+		
+			<Composant id="31" name="Expédition 1 coffret ITI" fournisseur="TNT" ref="A" prixU="60"/>
+			<Composant id="32" name="Expédition 5 coffrets ITI" fournisseur="TNT" ref="A" prixU="12"/>
+			<Composant id="33" name="Montage test sous-traitant" fournisseur="STUDELEC" ref="A" prixU="37.50"/>
+			
+		</AchatAffaire>
+    </ComposantsConfiguration>
+
+    <BaseCommune>
+		<Composant id="01" quantité="1"/>
+		<Composant id="02" quantité="1"/>
+		<Composant id="03" quantité="1"/>
+		<Composant id="04" quantité="1"/>
+		<Composant id="05" quantité="1"/>
+		<Composant id="15" quantité="1"/>
+		<Composant id="33" quantité="1"/>
+		<Composant id="32" quantité="1"/>
+    </BaseCommune>
+	
+    <CodeProduits>
+	
+		<code name="codeITIMORADIO">
+			<Composant id="19" action="add" quantité="1"/>
+		</code>
+		
+		<code name="codeITIMOLS">
+			<Composant id="18" action="add" quantité="1"/>
+		</code>
+		
+		<code name="codeITIMORTC">
+			<Composant id="17" action="add" quantité="1"/>
+		</code>
+		
+		<code name="codeITINbvoies">
+			<Composant id="06" action="add" quantité="x"/>
+			<Composant id="14" action="add" quantité="x"/>
+			<Composant id="16" action="add" quantité="x"/>
+		</code>
+		
+		<code name="codeITIA">
+			<Composant id="09" action="add" quantité="1"/>
+			<Composant id="12" action="add" quantité="1"/>
+			<Composant id="13" action="add" quantité="4"/>
+			<Composant id="21" action="add" quantité="1"/>
+		</code>
+		
+		<code name="codeITI4">
+			<Composant id="07" action="add" quantité="1"/>
+			<Composant id="10" action="add" quantité="1"/>
+			<Composant id="13" action="add" quantité="10"/>
+		</code>
+		
+		<code name="codeITI8">
+			<Composant id="08" action="add" quantité="1"/>
+			<Composant id="11" action="add" quantité="1"/>
+			<Composant id="13" action="add" quantité="12"/>
+		</code>
+		
+		<code name="codeQ3Tore">
+			<Composant id="22" action="add" quantité="x"/>
+		</code>		
+    </CodeProduits>
+    
+
+    <ReglesCode>
+	
+		<regle name="rg1" code1="codeITI20kV" operande="AND" code2="codeITITrans">
+			<Composant id="31"  action="add" quantité="1"/>
+		</regle>
+		
+		<regle name="rg2" code1="codeITI15kV" operande="AND" code2="codeITITrans">
+			<Composant id="30"  action="add" quantité="1"/>
+		</regle>
+		
+		<regle name="rg3" code1="CodeALiTore" operande="AND" code2="codeQLitore2">
+			<Composant id="23"  action="add" quantité="x"/>
+		</regle>
+		
+		<regle name="rg4" code1="CodeALiTore" operande="AND" code2="codeQLitore5">
+			<Composant id="24"  action="add" quantité="x"/>
+		</regle>
+		
+		<regle name="rg5" code1="CodeALiTore" operande="AND" code2="codeQLitore10">
+			<Composant id="25"  action="add" quantité="x"/>
+		</regle>
+		
+		<regle name="rg6" code1="CodeALiTore" operande="AND" code2="codeQLitore15">
+			<Composant id="26"  action="add" quantité="x"/>
+		</regle>
+		
+		<regle name="rg7" code1="CodeALiPPACS" operande="AND" code2="codeQLiPP2">
+			<Composant id="27"  action="add" quantité="x"/>
+		</regle>
+		
+		<regle name="rg8" code1="CodeALiPPACS" operande="AND" code2="codeQLiPP5">
+			<Composant id="28"  action="add" quantité="x"/>
+		</regle>
+		
+		<regle name="rg9" code1="CodeALiPPACS" operande="AND" code2="codeQLiPP10">
+			<Composant id="29"  action="add" quantité="x"/>
+		</regle>
+		
+    </ReglesCode>
+
+</Produit> 
+</Nomenclature>

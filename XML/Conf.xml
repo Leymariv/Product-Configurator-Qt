@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<Conf versionXML="1.0">
+  <Mdo>
+<Mdo name="ChefProjet" coutH="103" date="04/02/2015"/>
+<Mdo name="Technicien" coutH="61" date="04/02/2015"/>
+<Mdo name="Ouvrier" coutH="41" date="04/02/2015"/>
+    
+  </Mdo>
+  <Frais>
+ <Frais name="FraisDSS" pourcentage="6" date="04/02/2015"/>   
+ <Frais name="FraisFinanciers" pourcentage="1.50" date="04/02/2015"/>   
+ <Frais name="FraisDirection" pourcentage="2.54" date="04/02/2015"/>   
+ <Frais name="FraisGeneraux" pourcentage="5" date="04/02/2015"/>
+  </Frais>
+
+</Conf>

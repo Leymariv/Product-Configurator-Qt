@@ -1,0 +1,16 @@
+<RCC>
+    <qresource prefix="/">
+        <file>img/Fond.jpg</file>
+        <file>img/Bandeau.jpg</file>
+        <file>img/vinci.jpg</file>
+        <file>img/logo.jpg</file>
+        <file>img/logo.png</file>
+        <file>FichesProduit/CDEFG.pdf</file>
+        <file>FichesProduit/TPG.png</file>
+        <file>FichesProduit/CTFG.png</file>
+        <file>FichesProduit/ArmoirePVH.png</file>
+        <file>FichesProduit/CDEFG.jpeg</file>
+        <file>img/logo.bmp</file>
+        <file>img/logo.ico</file>
+    </qresource>
+</RCC>

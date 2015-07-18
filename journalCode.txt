@@ -1,0 +1,172 @@
+ But du document: Dire tout ce qui a été fait depuis la derniére version.
+
+A noter nous commencerons à  partir des sources suivantes: J'ai commencé l'implémentation le 11/11/2014. Et jusqu'à  présent j'ai simplement crée les menus de base (voir SpecFoncInterpreteur.pdf). Notons que tous les menus héritent de l'interface PageInterface qui a deux indexs, suivant et précédent. Ces indexes seront utilisés pour nous ballader dans le QStackedWidget.
+
+Liste des fichiers présents : 
+ pageinterface.h  main.cpp           produitliste.cpp  marcheliste.cpp   
+ produitliste.h   marcheliste.h      windows.cpp       login.cpp          
+ saisicode.cpp    windows.h          login.h           pageinterface.cpp  
+ saisicode.h      
+
++------------------------------------------------------------------------+
+
+14/11/2014:
+
+-Création de commentaire.ui, .h et .cpp. Ce menu sera le menu de commentaire à  afficher aux RA à  la fin de la configuration. Il héritera de pageInterface.
+-Je change la facon dont sont passé les menus précédents et courrants. Ainsi, lorsqu'on  va d'un menu 1 a un menu 2. Le menu 2 aura pour champs: indexcourant = 2, indexprecedent =1. Comme à§a, a lappui du bouton prec, on sait qu'on doit aller à  1. Le problà¨me arrive lorsqu'on instanci un menu: Comme toutes les instanciations sont faites depuis le menu Windows (menu 0) il faut garder une trace du menu courrant. D'ouà¹ l'idée d'utiliser une méthode pour set l'attribut indexCourant de notre menu Windows (fonction setGlobalIndex)
+
+17/11/2014:
+
+-Gestion des indices pour passer au menu précédent et par rapport au menu suivant.
+-Création des fichiers MainMenuSection.h, .cpp et .ui. Ce menu sera le menu principal des section, je pense lire le fichier xml correspondant au menu ici. 
+
+-Il ne reste plus qu'a implémenter le menu informations produit
+
+18/11/2014:
+
+-Implémentation du menu information produit. Ajout des fichiers produitMenu.h, ?.cpp et .ui. Ce menu sera attaché au QStackedWidget de notre mainWindows.
+La fonction openImage sera utilisé our ouvrir une image du produit. Je tente d'ouvrir un pdf de la fiche produit associé, mais cela est assez compliqué.
+
+19/11/2014:
+
+-Elaboration de Produits.xml qui contiendra tous les produits, leur lien image et leur lien fiche pdf. Pourquoi ne pas ajouter l'ihm? Je pense faire un xml par produit pour tout ce qui est nomenclature, main d'oeuvre, code produit...
+-Création du fichier produit.cpp et produit.h. Cette classe servira à  stocker les informations relatives aux produits. Un produit a pour l'instant un nom, un lien vers on pdf et un lien vers une image.
+-Création du fichier data.cpp et data.h. Cette classe sera utilisé pour stocker toutes les données de nos xml. Elle a pour l'instant une liste de produit. La fonction readXml(QString fichier.xml) s'occupe d'aller lire dans le fichier xml correspondant l'ensemble des produits afin de remplir la liste des attributs.
+
+20/11/2014:
+
+-Gestion du xml (lecture, mise en place de l'ihm) terminée pour la liste des produits (Produits.xml). 
+-Menu produitMenu totalement foctionnel (informations, pdf et image).
+-Dans Produits.xml, début de la rédaction pour chaque produit des sections, listes, saisie libre et option a cocher. Pour l'instant gestion seule de la parie graphique, la partie contrainte et la partie nomenclature viendra plus tard.
+
+24/11/2014:
+
+-Ajout des fichiers section.cpp,.h. Cette classe servira à  caractériser la classe data dans laquelle toutes les données du xml seront stockés. Cette classe contients 3 listes répertoriant respectivement les listes déroulantes, les options à  cocher et les champs de saisie de la section. Pour chaque nouvelle section dans le xml, un objet section sera instancié, et les listes de celle-ci mis a jour.
+
+-Ajout de ListDeroul.cpp .h, ajout de OptCocher.cpp .h et ajout de SaisieLibre.cpp .h. Ces trois classes contiendront les champs correspondant au xml. Elles seront instanciées lors de la création d'un objet section.
+
+ON DEVRA DIRE QUEL TYPE DE VARIABLE SE TROUVE DANS LE XML! (int, string..etc) 
+
+
+27/11/2014:
+
+-Gestion du xml terminée pour ce qui est de l'interface graphique. ie tous les menus se chargent correctement selon les choix de l'utilisateur. Il faut à  présent créer dynamiquement les menus des sections.
+-Ajout des fichiers sectionGenerique.cpp, .h et .ui. Cette classe sera utilisé pour instancier une nouvelle section à  chaque fois que l'utilsateur se lance dans la configuration d'une nouvelle section.
+
+
+01/12/2014:
+
+-Création de infochamp.cpp et .h. Cette classe servira pour stocker les résultats des interactions de l'utilisateur avec l'application. Ainsi, chaque section contiendra une liste d'infoChamp. En parcourant toutes les listes de toutes les sections, ont connaitra la configuration totale du produit.
+
+02/12/2014:
+
+-Implémentation du résumé de la configuration pour les sections et le produit total fonctionnel. Je ne suis pas tout à  fait satisfait de la propreté du code à  cet endroit.
+-Implémentation de l'affichage (couleur, font police) des résumé de la configuration OK.
+
+03/12/2014:
+
+-Pas de code aujourd'hui, j'avance sur le fichier Nomenclature.xml.
+-Je constate un bug au niveau de l'affichage du résumé de la configuration:
+Lorsque je décoche les optCocher, celle ci reste cochées dans le résumé de la configuration du menu mainMenuSection.
+-De plus, lorsque je sélectionne le champ d'une liste dans une section, celle ci s'afiche dans le résume conf de la section, mais si j'appui sur précédent, puis suivant pour revenir au menu de la section, l'affiche se fait bien mais en validant pour me rendre au menuMainSection, rien n'apparait. Peut àªtre que je dois effacer toute la conf quand je fais précédent? 
+
+04/12/2014:
+
+-Probléme d'affichage réglé, tout fonctionne parfaitement. J'ai rajouté dans la classe sectionGenerique une condition lors de l'intanciation d'un layout Horizontal pour l'ajout des listes déroulantes. Si on a plus de 2 listes déroulantes, et pas d'opt cocher ou de saisie liste, on met les listes déroulantes dans un layout vertical, c'est plus jolie, et évite les problémes de dimensionnement de la fenetre.
+-Correction de tous les warnings. Plus de warnings!
+-Je m'attaque à  la lecture de nomenclature.xml.
+-Création de Composant.cpp et Composant.h. Cette classe servira de classe abstraite à  composantFG et composantAffaire.
+-Lecture de la section "configurationComposant"  terminé. Les composants sont stockés dans chaque produits sous forme d'une liste de "Composant", qui contient des "ComposantAffaire" et des "ComposantFG".
+
+05/12/2014:
+
+-Lecture de baseCommune terminée pour ce qui est de Nomenclature.xml. Avant de partir sur les codes produits, je retourne vers "Produits.xml" afin d'implémenté pour chaque champs un code produit.
+-Création des fichiers Code.cpp, .h. Cette classe contiendra les informations du code produit d'un champ. Je choisis aprà¨s plusieurs remaniement de mon code de metre cette classe en paramétre des classes listeDéroul et OptCocher. A présent, toutes les informations relatives au code de notre produit sera contenu dans les menus de liste ou de champ a selectionner.
+-Implémentation de buildDataProduit dans data.cpp pour ce qui est des codes produits.
+
+08/12/2014:
+-Début de l'implémentation de buildDataNomenclature dans data.cpp pour ce qui est des codes produits.
+-Gestion terminée des codes produits pour les deux fichiers XML. Reste à  regarder la gestion des régles dans nomenclature.xml.
+-Je me lance dans la gestion de la génération de la nomenclature en fonction des options sélectionnées.
+
+09/12/2014:
+-Gestion nomenclature en cours. Je veux changer la faà§on dont je gà¨re ma liste d'infoChamp, pour quelle ne contienne que les informations sélectionnées. Ainsi, en la parcourant, on sera exactement quel configuration a été tapée.
+-Probléme, dans ce cas, le code produit ne sera pas interprétable car on aura pas de 0 la ou on devrait en avoir...
+-Le code produit s'affiche correctement, selon la configuration. J'ai opté pour une liste de QString pour le "codeProduit". Ces QString sont encodées en base 36 (0,1,2...9,A,B...Z).
+
+10/12/2014:
+-Création de codeProduitMenu.cpp,.h et .ui. Cette classe servira de menu pour résumé le code produit généré. L'appui sur le bouton menu principal redirigera vers le menu principal, et l'appui sur le bouton saisir le code produit vers le menu de saisi du code produit.
+-Création de resumeConfiguration.cpp , h, ui. Cette classe sera accessible à  partir du menu saisie du code produit et affichera dans des onglets distincts, la nomenclature, le résumé de la configuration, et les opérations de main d'oeuvre.
+
+11/12/2014:
+-Affichage de la nomenclature et du résumé de la configuration dans "resumeconfiguratuion" ok. Cependant, il y a un problà¨me au niveau de la transmission du code produit. Je regarde.
+-Affichage nomenclature, code produit et résumé configuration terminé!
+-Je vais maintenant m'intérésser à  la section régle code de Nomenclature.xml.
+-Création de la classe regleCode, qui sera utilisé pour répertorier les régles des codes produits.
+-Configuration totalement fonctionnelle pour les 2 xmls.
+
+17/12/2014:
+J'ai pris du retard à  cause de mon voyage à  Stockholm.
+-Début de l'implémentation de la gestion des codes articles pour les marchés.
+-Créatioon de la classe "Marche" et de la classe "Codet". La classe "Marche" a un nom, celui du marché et une liste de "Codets". Un "Codet" a un nom, un prixUnitaire, un codeArticle et une quantité.
+
+18/12/2014:
+-Lecture de marche.xml terminée.
+-J'ai longtemps bloqué sur un problà¨me de mémoire lors de l'ajout à  une liste. Aprà¨s 3h de débuggage, j'ai essayé de recompiler en nettoyant le projet, ce qui a solutioné le probléme.
+-Gestion de la mise à  jour des régles (savoir quand elles sont vérifiées en fonction des codes activés). 
+-En cours, gestion de la mise à  jour des codets, afin de mettre leur quantité à  jour en fonction de la configuration et du fichier Marche.xml.
+
+19/12/2014:
+-Je continu la gestion de la mise à  jour des codets. Il me reste à  gérer pour les codes produits, les qunatité du type "7-x".
+-Gestion du merge de la liste des codets de produit. Lorsqu'on ajoute des codets à  cette liste, il se peut qu'on ajoute 2 fois le màªme codet. Il faut alors ajouter leur quantité et merger la liste.
+-Je pense pouvoir dire que la gestion des bordereau est terminée, et j'en suis satisfait pour le moment. Peut-àªtre qu'il fudra changer quelques petites choses lorsqu'on attaquera d'autre produit, mais pour l'instant c'est bien.
+-Je m'attaque à  la gestion de la main d'oeuvre.
+-Création d'un fichier "conf.xml" dans lequel on va renseigner les paramétres internes du logiciels, comme par exmple, les couts horaires des employés, les frais (DSS, financiers, de direction...)
+-Création des classes "Frais" et "Mdo" pour gérer les frais et la main d'oeuvre. 
+22/12/2014:
+-Ecriture et lecture du fichier xml Operation.xml. Ce fichier sera utiliser pour attribuer des opérations de main d'oeuvre aux régles et codes de configuration. A VOIR: Attribuer des opérations à  des composants.
+-reste à  afficher cette main d'oeuvre selon la configuration.
+-Update lors de la lecture de "Nomenclature.xml", on peut désormais créer des régles à  partir de régles.
+-S'en est fini de la gestion de la main d'oeuvre pour le moment. Le fichier xml est correctement lu et parsé. Les options sont correctement déclinés, et l'ajout de régles à  partir de régles est trés pratique!
+-Il me reste à  interpréter un code produit, mais surtout à  générer un fichier excell avant de pouvoir clore cette partie de l'application. Je me lancerai donc demain dans la lecture et l'interprétation par notre application d'un code produit.
+
+29/12/2014:
+-Lecture d'un code produit et décryptage de celui-ci.
+
+30/12/2014:
+-Optimisation du code pour le décriptage du code produit.
+-Je tente tant bien que mal d'interagir avec un fichier excel, mais c'est beaucoup plus compliqué que prévu.
+-J'ai trouvé la solution. Cela va être bien plus complexe que prévu, mais je devrais y arriver. En fait, 
+je vais avec l'invité de comande windows (oui c'est la mort...) dézipper via qt le fichier BA.xlsx (oui ça se dézippe),
+ pour obtenir une multitude de fichiers xml. La dedans, je vais regarder quels fichiers sont intéressants pour les modifications
+ que j'ai besoin d'apporter. Ensuite, il n'y aura plus qu'à tout re zipper et voila, le tour est joué.
+
+05/01/2015:
+-Le fichier à modifier est "sharedString.xml", contenu dans la dossier "xl".
+-Je rencontre un petit problème lors de l'utilisation de la console "cmd" de windows. En effet, j'utilise
+actuellement la commande Qt "system(qPrintable(commande))" ou commande vaut par exemple "start rezzip.bat".
+Le problème avec cette commande c'est qu'elle est lancée dans un thread parallèle et que Qt n'attent pas la fin
+de l'execution du cmd pour continuer l'execution du code Qt. Ce qui fait que les actions que je tente d'executer 
+sur les fichiers qui devrait être dézipper ne le sont en fait pas et du coup on a un problème.
+-Je tente donc d'utiliser une autre commande Qt comme par exemple QProcess.
+-Probléme résolu à l'aide de l'utilisation de thread (mythread.cpp) et de la commande system de Qt.
+
+12/01/2015:
+-Je me bats depuis une semaine sur les xml dezzipés du xlsx. J'ai complétement géré la sheet 1, mais d'une c'est très long et compliqué à implémenter et de 2, ce ne sera pas maintenable.
+-Je me lance à la découverte de QAXObject et active X pour Qt afin de jongler avec des fichier excel sous Qt.
+
+13/01/2015:
+-Aprés une matinée inefficace pour ce qui est d'utiliser QAXObject, je suis un peu désespéré. Heureusement, je penses à quelque chose qui va tout me débloquer rapidement et TRES FACILEMENT,
+tant au niveau implémentation qu'au niveau de la maintenabilité: Utiliser les .vbs de excel et les exécuter à partir du cmd windows via Qt.
+
+14/01/2015:
+-Je poffine mon code, arrange les petits trucs qui ne me plaisait pas trop, et ça y est, on sort un BA.xlsx parfaitement rempli!
+
+15/01/2015:
+-Je me lance dans la génération d'un setup d'installation. Je verrai ensuite pour gérer la connection à une base de données.
+-Ecriture du fichier README.txt dans le dossier setup pour expliquer la génération du setup.
+-Création du fichier pathConfig.h utilisé pour modifier les paths selon qu'on est en compilation debug ou en compilation release.
+-Ajout du fichier myapp.rc qui sert a mettre une image pour le raccourcis.
+
+16/01/2015:
+-J'ai un petit problème lors de l'installation sur un autre ordi, je crois avoir un probléme de path l.187 commentaire.cpp

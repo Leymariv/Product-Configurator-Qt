@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<Nomenclature versionXML="1.0">
+<Produit nameProduit="TPG"> 
+    <ComposantsConfiguration>
+      <RefFGS>
+      </RefFGS>
+      <AchatAffaire>
+      </AchatAffaire>
+    </ComposantsConfiguration>
+
+    <BaseCommune>
+    </BaseCommune>
+
+    <CodeProduits>
+    </CodeProduits>
+    
+
+    <ReglesCode><!-- Ici rélge1 et régle2 permettent d'ajouter la bonne carte alim lors de la sélection par l'utilisateur de l'option redondence alim-->
+    </ReglesCode>
+
+</Produit> 
+</Nomenclature>

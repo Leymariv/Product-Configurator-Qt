@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>ResumeConfiguration</class>
+ <widget class="QWidget" name="ResumeConfiguration">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>876</width>
+    <height>587</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">#subTitle{
+background-color: transparent;
+border-width: 3px;
+border-color: white;
+border-style: solid;
+border-radius: 7;
+padding: 3px;
+font-size: 15px;
+padding-left: 5px;
+padding-right: 5px;
+min-width: 280px;
+max-width: 500px;
+}
+
+
+#prixTotMdo{
+background-color: transparent;
+border-width: 3px;
+border-color: white;
+border-style: solid;
+border-radius: 7;
+padding: 3px;
+font-size: 15px;
+padding-left: 5px;
+padding-right: 5px;
+min-width: 450px;
+max-width: 500px;
+}
+
+#prixTot{
+background-color: transparent;
+border-width: 3px;
+border-color: white;
+border-style: solid;
+border-radius: 7;
+padding: 3px;
+font-size: 15px;
+padding-left: 5px;
+padding-right: 5px;
+min-width: 450px;
+max-width: 500px;
+}
+
+
+#prixTotNom{
+background-color: transparent;
+border-width: 3px;
+border-color: white;
+border-style: solid;
+border-radius: 7;
+padding: 3px;
+font-size: 15px;
+padding-left: 5px;
+padding-right: 5px;
+min-width: 450px;
+max-width: 500px;
+}
+
+QTabWidget{
+color: orange;
+background-color: transparent;
+border-width: 1px;
+border-color: white;
+border-style: solid;
+border-radius: 7;
+padding: 3px;
+font-size: 16px;
+padding-left: 5px;
+padding-right: 5px;
+}
+
+QPushButton {
+color: orange;
+background-color: white;
+border-width: 1px;
+border-color: white;
+border-style: solid;
+border-radius: 7;
+padding: 3px;
+font-size: 25px;
+padding-left: 5px;
+padding-right: 5px;
+min-width: 280px;
+max-width: 350px;
+min-height: 25px;
+max-height: 35px;
+}</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout">
+   <item row="0" column="0">
+    <widget class="QLabel" name="subTitle">
+     <property name="text">
+      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:18pt; font-weight:600; color:#5d5d5d;&quot;&gt;Code Produit :&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     </property>
+    </widget>
+   </item>
+   <item row="1" column="0">
+    <widget class="QTabWidget" name="tabWidget">
+     <property name="currentIndex">
+      <number>0</number>
+     </property>
+     <widget class="QWidget" name="tabConf">
+      <attribute name="title">
+       <string>Configuration</string>
+      </attribute>
+      <layout class="QGridLayout" name="gridLayout_2">
+       <item row="1" column="0">
+        <spacer name="horizontalSpacer_3">
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>40</width>
+           <height>20</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+       <item row="0" column="0" colspan="2">
+        <widget class="QTextEdit" name="resumeConf">
+         <property name="readOnly">
+          <bool>true</bool>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="1">
+        <widget class="QLabel" name="prixTot">
+         <property name="text">
+          <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:18pt; font-weight:600; color:#5d5d5d;&quot;&gt;Prix Total : &lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="tabNom">
+      <attribute name="title">
+       <string>Nomenclature</string>
+      </attribute>
+      <layout class="QGridLayout" name="gridLayout_3">
+       <item row="2" column="0">
+        <spacer name="horizontalSpacer">
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>40</width>
+           <height>20</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+       <item row="0" column="0" colspan="2">
+        <widget class="QTextEdit" name="resumeNom">
+         <property name="readOnly">
+          <bool>true</bool>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="1">
+        <widget class="QLabel" name="prixTotNom">
+         <property name="text">
+          <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:18pt; font-weight:600; color:#5d5d5d;&quot;&gt;Prix Nomenclature : &lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="tabMdo">
+      <attribute name="title">
+       <string>Main d'oeuvre</string>
+      </attribute>
+      <layout class="QGridLayout" name="gridLayout_4">
+       <item row="1" column="0">
+        <spacer name="horizontalSpacer_2">
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>40</width>
+           <height>20</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+       <item row="0" column="0" colspan="2">
+        <widget class="QTextEdit" name="resumeMdo">
+         <property name="readOnly">
+          <bool>true</bool>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="1">
+        <widget class="QLabel" name="prixTotMdo">
+         <property name="text">
+          <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:18pt; font-weight:600; color:#5d5d5d;&quot;&gt;Prix Main d'oeuvre : &lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </widget>
+   </item>
+   <item row="2" column="0">
+    <layout class="QHBoxLayout" name="horizontalLayout">
+     <item>
+      <widget class="QPushButton" name="precBouton">
+       <property name="text">
+        <string>Précédent</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="suivBouton">
+       <property name="text">
+        <string>Suivant</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

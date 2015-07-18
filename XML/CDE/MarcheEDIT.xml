@@ -1,0 +1,126 @@
+<?xml version="1.0"?>
+<Marches versionXML="1.0">
+	<Produit nameProduit="CDEFG">
+		<Marche name="ERDF">
+			<Codets>
+				<Codet id="01" name ="CDE en Armoire, raccordement sur bornier,320TS" codeArticle="4903600" prixVenteU="19944.55"/>
+				<Codet id="02" name ="CarteAlimentation 48/127V de rechange" codeArticle="4903603" prixVenteU="976.62"/>
+				<Codet id="03" name ="CarteUC de rechange" codeArticle="4903604" prixVenteU="3574.62"/>
+				<Codet id="04" name ="Carte 8sorties de rechange" codeArticle="4903605" prixVenteU="1017.53"/> 
+				<Codet id="05" name ="Cartes48TS/125V sorties sur bornier" codeArticle="4903606" prixVenteU="1528.85"/>	
+				<Codet id="06" name ="Cartes48TS/48V sorties sur bornier" codeArticle="4903607" prixVenteU="1528.85"/>
+				<Codet id="07" name ="Cartes48TS/125 lot de maintenance" codeArticle="4903608" prixVenteU="961.28"/>
+				<Codet id="08" name ="Cartes48TS/48V lot de maintenance" codeArticle="4903609" prixVenteU="961.28"/>
+				<Codet id="09" name ="Rack CDE supplémentaire" codeArticle="4903602" prixVenteU="1835.64"/>
+			</Codets> 
+			<BaseCommune>
+				<Codet id="01" action="add" quantité="1"/>
+				<Codet id="02" action="remove" quantité="1"/>
+				<Codet id="06" action="remove" quantité="7"/>
+			</BaseCommune>
+			<CodeProduits>
+				  <code name="codeAlim48">
+				<Codet id="02" action="add" quantité="1"/>
+				  </code>
+				  <code name="codeAlim125">
+				<Codet id="02" action="add" quantité="1"/>
+				  </code>
+				  <code name="codeRedAlim">
+				<Codet id="02" action="add" quantité="1"/>
+				  </code>
+				  <code name="codeRP48TS48V"><!--La valeur x signifie qu'on ajoute la valeur du champ -->
+				<Composant id="16" action="add" quantité="x"/>
+				<Composant id="25" action="remove" quantité="x"/>
+				<Composant id="44" action="remove" quantité="2*x"/><!--Seules  expressions possibles: int (+;-;*;∕;) x "-->
+				<Composant id="48" action="add" quantité="2*x"/>
+				  </code>
+				  <code name="codeRP48TS125V">
+				<Composant id="17" action="add" quantité="x"/>
+				<Composant id="25" action="remove" quantité="x"/>
+				<Composant id="44" action="remove" quantité="2*x"/>
+				<Composant id="48" action="add" quantité="2*x"/>
+				  </code>
+				  <code name="codeRE48TS48V">
+				<Composant id="16" action="add" quantité="x"/>
+				<Composant id="25" action="remove" quantité="x"/>
+				<Composant id="44" action="remove" quantité="2*x"/>
+				<Composant id="48" action="add" quantité="2*x"/>
+				  </code>
+				  <code name="codeRE48TS125V">
+				<Composant id="17" action="add" quantité="x"/>
+				<Composant id="25" action="remove" quantité="x"/>
+				<Composant id="44" action="remove" quantité="2*x"/>
+				<Composant id="48" action="add" quantité="2*x"/>
+				  </code>
+				  <code name="codefdp">
+				<Composant id="18" action="add" quantité="15"/>
+				<Composant id="22" action="add" quantité="2"/>
+				  </code>
+				  <code name="codeKTcarte48V">
+				<Composant id="16" action="add" quantité="1"/>
+				<Composant id="44" action="add" quantité="2"/>
+				<Composant id="48" action="add" quantité="2"/>
+				  </code>
+				  <code name="codeKTcarte125V">
+				<Composant id="17" action="add" quantité="1"/>
+				<Composant id="44" action="add" quantité="2"/>
+				<Composant id="48" action="add" quantité="2"/>
+				  </code>
+				  <code name="codeKTalim">
+				<Composant id="24" action="add" quantité="1"/>
+				<Composant id="42" action="add" quantité="2"/>
+				<Composant id="31" action="add" quantité="2"/>
+				  </code>
+				  <code name="codeKTucc">
+				<Composant id="11" action="add" quantité="1"/>
+				<Composant id="26" action="add" quantité="1"/>
+				<Composant id="27" action="add" quantité="1"/>
+				  </code>
+				  <code name="codeKT8tc">
+				<Composant id="08" action="add" quantité="1"/>
+				<Composant id="44" action="add" quantité="2"/>
+				<Composant id="48" action="add" quantité="2"/>	
+				  </code>      
+    </CodeProduits>
+			
+		</Marche>
+		<Marche name="RTE">
+		</Marche>
+	</Produit> 
+</Marches>
+
+
+
+
+
+
+<Codet name ="CDE en Armoire, raccordement sur bornier,320TS" codeArticle="4903600" prixVenteU="19944.55">
+	  <lien lien="BaseCommune" action="add" quantité="1"/>
+	</Codet>
+	<Codet name ="CarteAlimentation 48/127V de rechange" codeArticle="4903603" prixVenteU="976.62" >
+	  <lien lien="codeKTalim" action="add" quantité="1"/>
+	  <lien lien="codeRedAlim" action="add" quantité="1"/>
+	</Codet> 
+	<Codet name ="CarteUC de rechange" codeArticle="4903604" prixVenteU="3574.62">
+	  <lien lien="codeKTucc" action="add" quantité="1"/>
+	</Codet> 
+	<Codet name ="Carte 8sorties de rechange" codeArticle="4903605" prixVenteU="1017.53"> 
+	  <lien lien="codeKT8tc" action="add" quantité="1"/>
+	</Codet> 
+	<Codet name ="Cartes48TS/125V sorties sur bornier" codeArticle="4903606" prixVenteU="1528.85">	
+	  <lien lien="codeRP48TS48V" action="add" quantité="x-7"/>
+	  <lien lien="codeRE48TS48V" action="add" quantité="x"/>
+	  <lien lien="codeRP48TS125V" action="add" quantité="x"/>
+	  <lien lien="codeRE48TS125V" action="add" quantité="x"/>
+	</Codet>       
+	<Codet name ="Cartes48TS/48V sorties sur bornier" codeArticle="4903607" prixVenteU="1528.85">
+	</Codet> 
+	<Codet name ="Cartes48TS/125 lot de maintenance" codeArticle="4903608" prixVenteU="961.28">
+	  <lien lien="codeKTcarte125V" action="add" quantité="1"/>
+	</Codet> 
+	<Codet name ="Cartes48TS/48V lot de maintenance" codeArticle="4903609" prixVenteU="961.28">
+	  <lien lien="codeKTcarte48V" action="add" quantité="1"/>
+	</Codet> 
+	<Codet name ="Rack CDE supplémentaire" codeArticle="4903602" prixVenteU="1835.64">
+	  <lien lien="rg3" action="add" quantité="1"/>
+	</Codet> 

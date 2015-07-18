@@ -1,0 +1,77 @@
+<?xml version="1.0"?>
+<Operations versionXML="1.0">
+<Produit nameProduit="CDEFG"> 
+    <OperationsConfiguration>
+      <Operation id="01" name="Assemblage CDE">
+	<Mdo tpsCdp="4" tpsTech="0" tpsOuv="0"/>
+      </Operation>
+      <Operation id="02" name="Parametrage CDE">
+	<Mdo tpsCdp="1" tpsTech="0" tpsOuv="0"/>
+      </Operation>
+      <Operation id="03" name="Controle fonctionnement UCC">
+	<Mdo tpsCdp="1" tpsTech="0" tpsOuv="0"/>
+      </Operation>
+      <Operation id="04" name="Controle fonctionnement carte48/125">
+	<Mdo tpsCdp="0.2" tpsTech="0" tpsOuv="0"/>
+      </Operation>
+      <Operation id="05" name="Test liaison modem">
+	<Mdo tpsCdp="0.2" tpsTech="0" tpsOuv="0"/>
+      </Operation>
+      <Operation id="06" name="Saisie CDE en BD">
+	<Mdo tpsCdp="1" tpsTech="0" tpsOuv="0"/>
+      </Operation>
+      <Operation id="07" name="Edition LOGCDE">
+	<Mdo tpsCdp="0" tpsTech="1" tpsOuv="0"/>
+      </Operation>
+      <Operation id="08" name="Assemblage fdp">
+	<Mdo tpsCdp="1" tpsTech="0" tpsOuv="1"/>
+      </Operation>
+      <Operation id="09" name="Wrapping carte fdp">
+	<Mdo tpsCdp="0" tpsTech="0" tpsOuv="0.1"/>
+      </Operation>
+      <Operation id="10" name="Réalisation programme CDE">
+	<Mdo tpsCdp="0.8" tpsTech="0" tpsOuv="0"/>
+      </Operation>
+      <Operation id="01" name="Formation sur site">
+	<Mdo tpsCdp="8" tpsTech="0" tpsOuv="0"/>
+      </Operation>
+    </OperationsConfiguration>
+
+    <BaseCommune>
+      <Op id="01" action="add" quantité="1"/>
+      <Op id="02" action="add" quantité="1"/>
+      <Op id="03" action="add" quantité="1"/>
+      <Op id="06" action="add" quantité="1"/>
+      <Op id="07" action="add" quantité="1"/>
+    </BaseCommune>
+
+    <CodeProduits>
+      <code name="codeRP48TS48V"><!--La valeur x signifie qu'on ajoute la valeur du champ -->
+	<Op id="04" action="add" quantité="x"/>
+      </code>
+      <code name="codeRP48TS125V">
+	<Op id="04" action="add" quantité="x"/>
+      </code>
+      <code name="codeRE48TS48V">
+	<Op id="04" action="add" quantité="x"/>
+      </code>
+      <code name="codeRE48TS125V">
+	<Op id="04" action="add" quantité="x"/>
+      </code>
+    </CodeProduits>
+
+    <ReglesCode>
+      <regle name="rg3">
+	<Op id="01" action="add" quantité="0.5"/>
+	<Op id="02" action="add" quantité="0.5"/>
+      </regle>
+      <regle name="rg6">
+	<Op id="09" action="add" quantité="30"/>
+      </regle>
+      <regle name="rg5">
+	<Op id="09" action="add" quantité="30"/>
+      </regle>
+    </ReglesCode>
+	
+</Produit> 
+</Operations>

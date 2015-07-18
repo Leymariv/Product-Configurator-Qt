@@ -1,0 +1,51 @@
+<?xml version="1.0"?>
+	<Produits versionXML="1.0">
+	 <Produit name="STATEX" lienPdf="STATEX.pdf" lienImg="STATEX.jpeg" tag="ST">
+	  <Description texte = "Le TPG est un pupitre regroupant des voyants de gardiennage et un 
+	poste téléphonique. Il est installé dans les différents bâtiments d’un poste EDF (bâtiment 
+	de relayage, bâtiment de commande, bâtiment d’unité de services auxiliaires et ateliers)."/>
+	  <IHM nb="4">
+
+		  <Section name="Type de Statex">
+		  <ListeDeroulante name="Type de Statex" type="string">
+		  <Champ champValue="STATEX non ATEX" code="codeSTA" position="0" codeValue="A"/>
+		   <Champ champValue="STATEX ATEX" code="codeSTX" position="0" codeValue="X"/>
+		</ListeDeroulante>
+		  </Section>
+		  
+		  <Section name="Carte UC">
+		  <ListeDeroulante name="Type de Carte UC">
+			<Champ champValue="Aucune carte UC (cas ALEXSI)" code="codeALEXSI" position="1" codeValue="0"/>
+		  <Champ champValue="1 carte UC Ethernet non ATEX (UCES) " code="codeUCES" position="1" 
+	codeValue="1"/>
+		  <Champ champValue="1 carte UC Ethernet + Wifi non ATEX (UCEW)" code="codeUCEW" position="1"
+	 codeValue="3"/>
+		  
+		</ListeDeroulante>
+		  </Section>
+		  
+		  <Section name="Carte Chargeur 9-28 Solaire">
+		  <OptionCocher name="Ajouter une carte 9-28 Solaire"
+				  code="codeChargSol" position="2" codeValue="1"/>
+		</Section>	  
+		  
+		  <Section name="Cartes 8S TOR">
+		<ListeDeroulante name="Cartes 8S TOR"
+				 code="code8ST" position="3">
+		  <Champ champValue="0"/>
+		  <Champ champValue="1"/>
+		  <Champ champValue="2"/>
+		  <Champ champValue="3"/>
+		  <Champ champValue="4"/>
+		  <Champ champValue="5"/>
+		  <Champ champValue="6"/>
+		  <Champ champValue="7"/>
+		  <Champ champValue="8"/>
+		  <Champ champValue="9"/>
+		  <Champ champValue="10"/> 
+		</ListeDeroulante>
+		</Section>
+		  
+		</IHM>
+	  </Produit>
+	</Produits>

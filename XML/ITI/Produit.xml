@@ -1,0 +1,226 @@
+<?xml version="1.0"?>
+	<Produits versionXML="1.0">
+	  <Produit name="COFFRET ITI" lienPdf="CDEFG.pdf" lienImg="CDEFG.jpeg" tag="ITI">
+		<Description texte = " coffret ITI"/>
+			<IHM nb="6">
+
+				<Section name="COFFRET ITI - Type de ITI" >
+					<ListeDeroulante name="Choix  type de coffret">
+						<Champ champValue="ITI4" code="codeITI4" position="0" codeValue="0"/>
+						<Champ champValue="ITI8" code="codeITI8" position="0" codeValue="1"/>
+						<Champ champValue="ITI Aérien" code="codeITIA" position="0" codeValue="2"/>
+					</ListeDeroulante>
+					
+					<ListeDeroulante name="Choix du NB voies" code="codeITINbvoies" position="1">
+						<Champ champValue="1"/>
+						<Champ champValue="2"/>
+						<Champ champValue="3"/>
+						<Champ champValue="4"/>
+						<Champ champValue="5"/>
+						<Champ champValue="6"/>
+						<Champ champValue="7"/>
+						<Champ champValue="8"/>
+					</ListeDeroulante>
+					<OptionCocher name="Interrupteur HTA 12 Vcc" code="codeTensionInt12" position="2" codeValue="1"/>
+					<OptionCocher name="Interrupteur HTA 48 Vcc" code="codeTensionInt48" position="3" codeValue="1"/>
+				</Section> 
+
+				<Section name="COFFRET ITI - Type de Modem">
+					<ListeDeroulante name="Choix du Modem">
+						<Champ champValue="Aucun Modem" code="codeITIMOAucun" position="4" codeValue="0"/>
+						<Champ champValue="Modem RTC" code="codeITIMORTC" position="4" codeValue="1"/>
+						<Champ champValue="Modem LS" code="codeITIMOLS" position="4" codeValue="2"/>
+						<Champ champValue="Modem RADIO" code="codeITIMORADIO" position="4" codeValue="3"/>
+					</ListeDeroulante>
+				</Section> 
+		
+				<Section name="COFFRET ITI - Type de réseau HTA">
+					<ListeDeroulante name="TYPE DE RESEAU">
+						<Champ champValue="20 kV" code="codeITI20kV" position="5" codeValue="0"/>
+						<Champ champValue="15 kV" code="codeITI15kV" position="5" codeValue="1"/>
+					</ListeDeroulante>
+					<OptionCocher name="Transformateur en option" code="codeITITrans" position="6" codeValue="1"/>
+				</Section> 
+		
+				<Section name="ACCESSOIRES ITI- Jeu de 3 Tores">
+					<ListeDeroulante name="Nombre Jeu de 3 tores interchangeable" code="codeQ3Tore" position="7">
+						<Champ champValue="1"/>
+						<Champ champValue="2"/>
+						<Champ champValue="3"/>
+						<Champ champValue="4"/>
+						<Champ champValue="5"/>
+						<Champ champValue="6"/>
+						<Champ champValue="7"/>
+						<Champ champValue="8"/>
+					</ListeDeroulante>
+					<OptionCocher name="Avec liaison(s) Tore interchangeable(s)" code="CodeALiTore" position="8" codeValue="1"/>
+					<OptionCocher name="Avec liaison(s) PPACS interchangeable(s)" code="CodeALiPPACS" position="9" codeValue="1"/>
+					
+				</Section> 
+				
+				<Section name="ACCESSOIRES ITI - Liaison Tore">
+				
+					<ListeDeroulante name="Nombre Liaison tore 2 m" code="codeQLitore2" position="10">
+						<Champ champValue="1"/>
+						<Champ champValue="2"/>
+						<Champ champValue="3"/>
+						<Champ champValue="4"/>
+						<Champ champValue="5"/>
+						<Champ champValue="6"/>
+						<Champ champValue="7"/>
+						<Champ champValue="8"/>
+					</ListeDeroulante>	
+					
+					<ListeDeroulante name="Nombre Liaison tore 5 m" code="codeQLitore5" position="11">
+						<Champ champValue="1"/>
+						<Champ champValue="2"/>
+						<Champ champValue="3"/>
+						<Champ champValue="4"/>
+						<Champ champValue="5"/>
+						<Champ champValue="6"/>
+						<Champ champValue="7"/>
+						<Champ champValue="8"/>
+					</ListeDeroulante>
+					
+					<ListeDeroulante name="Nombre Liaison tore 10 m" code="codeQLitore10" position="12">
+						<Champ champValue="1"/>
+						<Champ champValue="2"/>
+						<Champ champValue="3"/>
+						<Champ champValue="4"/>
+						<Champ champValue="5"/>
+						<Champ champValue="6"/>
+						<Champ champValue="7"/>
+						<Champ champValue="8"/>
+					</ListeDeroulante>
+					
+					<ListeDeroulante name="Nombre Liaison tore 15 m" code="codeQLitore15" position="13">
+						<Champ champValue="1"/>
+						<Champ champValue="2"/>
+						<Champ champValue="3"/>
+						<Champ champValue="4"/>
+						<Champ champValue="5"/>
+						<Champ champValue="6"/>
+						<Champ champValue="7"/>
+						<Champ champValue="8"/>
+					</ListeDeroulante>
+				</Section> 
+				
+				<Section name="ACCESSOIRES ITI - Liaison tension"> 
+					<ListeDeroulante name="Nombre Liaison PPACS 2 m" code="codeQLiPP2" position="14">
+						<Champ champValue="1"/>
+						<Champ champValue="2"/>
+						<Champ champValue="3"/>
+						<Champ champValue="4"/>
+						<Champ champValue="5"/>
+						<Champ champValue="6"/>
+						<Champ champValue="7"/>
+						<Champ champValue="8"/>
+					</ListeDeroulante>
+					
+					<ListeDeroulante name="Nombre Liaison PPACS 5 m" code="codeQLiPP5" position="15">
+						<Champ champValue="1"/>
+						<Champ champValue="2"/>
+						<Champ champValue="3"/>
+						<Champ champValue="4"/>
+						<Champ champValue="5"/>
+						<Champ champValue="6"/>
+						<Champ champValue="7"/>
+						<Champ champValue="8"/>
+					</ListeDeroulante>
+					
+					<ListeDeroulante name="Nombre Liaison PPACS 10 m" code="codeQLiPP10" position="16">
+						<Champ champValue="1"/>
+						<Champ champValue="2"/>
+						<Champ champValue="3"/>
+						<Champ champValue="4"/>
+						<Champ champValue="5"/>
+						<Champ champValue="6"/>
+						<Champ champValue="7"/>
+						<Champ champValue="8"/>
+					</ListeDeroulante>
+				
+				</Section> 
+			</IHM>
+			
+			<Regles>
+				<regle name="rgNBvoiesITI4temp" codeValue1="codeITINbvoies" comparaison="SUP" nombre="4">
+				</regle>
+				<regle name="rgNBvoiesITI4" code1="codeITI4" operande ="AND" code2="rgNBvoiesITI4temp">
+				<Message text="Impossible d'avoir plus de 4 voies pour un coffret ITI 4 !! Veuillez rechoisir le type de coffret ou le nombre de voies"/>
+				</regle>
+				
+				<regle name="rgNBvoiesITI8temp" codeValue1="codeITINbvoies" comparaison="INF" nombre="5">
+				</regle>
+				<regle name="rgNBvoiesITI8" code1="codeITI8" operande ="AND" code2="rgNBvoiesITI8temp" >
+				<Message text="Impossible d'avoir moins de 5 voies pour un coffret ITI 8 !! Veuillez rechoisir le type de coffret ou le nombre de voies"/>
+				</regle>
+				
+				<regle name="rgNBvoiesITIAerientemp" codeValue1="codeITINbvoies" comparaison="SUP" nombre="1">
+				</regle>
+				<regle name="rgNBvoiesITIAerien" code1="codeITIA" operande ="AND" code2="rgNBvoiesITIAerientemp" >
+				<Message text="Impossible d'avoir plus d'une voie pour un coffret ITI Aérien !! Veuillez rechoisir le type de coffret ou le nombre de voies"/>
+				</regle>
+				
+				<regle name="rgTensionInterHTA1" code1="codeTensionInt12" operande ="AND" code2="codeTensionInt48">
+				<Message text="Impossible d'avoir les deux types d'alimentation à la fois"/>
+				</regle>
+				
+				<regle name="rgTensionInterHTA2" code1="codeTensionInt12" operande ="AND" code2="codeITI4">
+				<Message text="Impossible d'avoir une tension 12 Vcc pour un coffret ITI4. Veuillez décocher la case Interrupteur HTA 12 Vcc"/>
+				</regle>
+				
+				<regle name="rgTensionInterHTA3" code1="codeTensionInt12" operande ="AND" code2="codeITI8">
+				<Message text="Impossible d'avoir une tension 12 Vcc pour un coffret ITI8. Veuillez décocher la case Interrupteur HTA 12 Vcc"/>
+				</regle>
+				
+				<regle name="rgToreITIAtemp" codeValue1="codeQ3Tore" comparaison="SUP" nombre="0">
+				</regle>
+				<regle name="rgToreITIA" code1="codeITIA" operande ="AND" code2="rgToreITIAtemp">
+				<Message text="Impossible de fournir des jeux de tores avec un coffret ITI aérien"/>
+				</regle>
+				
+				<regle name="rgliaisonTore2ITIAtemp" codeValue1="codeQLitore2" comparaison="SUP" nombre="0">
+				</regle>
+				<regle name="rgLiaisonTore2ITIA" code1="codeITIA" operande ="AND" code2="rgliaison2ITIAtemp">
+				<Message text="Impossible de fournir des liasons tore avec un coffret ITI aérien"/>
+				</regle>
+				
+				<regle name="rgliaison5Tore5ITIAtemp" codeValue1="codeQLitore5" comparaison="SUP" nombre="0">
+				</regle>
+				<regle name="rgLiaisonTore5ITIA" code1="codeITIA" operande ="AND" code2="rgliaison5ITIAtemp">
+				<Message text="Impossible de fournir des liasons tore avec un coffret ITI aérien"/>
+				</regle>
+				
+				<regle name="rgLiaisonTore10ITIAtemp" codeValue1="codeQLitore10" comparaison="SUP" nombre="0">
+				</regle>
+				<regle name="rgLiaison10ITIA" code1="codeITIA" operande ="AND" code2="rgliaison10ITIAtemp">
+				<Message text="Impossible de fournir des liasons tore avec un coffret ITI aérien"/>
+				</regle>
+				
+				<regle name="rgliaisonTore15ITIAtemp" codeValue1="codeQLitore15" comparaison="SUP" nombre="0">
+				</regle>
+				<regle name="rgLiaisonTore15ITIA" code1="codeITIA" operande ="AND" code2="rgliaison15ITIAtemp">
+				<Message text="Impossible de fournir des liasons tore avec un coffret ITI aérien"/>
+				</regle>
+				
+				<regle name="rgLiaisonPPACS2ITIAtemp" codeValue1="codeQLiPP2" comparaison="SUP" nombre="0">
+				</regle>
+				<regle name="rgLiaisonPPACS2ITIA" code1="codeITIA" operande ="AND" code2="rgliaison2ITIAtemp">
+				<Message text="Impossible de fournir des liasons PPACS avec un coffret ITI aérien"/>
+				</regle>
+				
+				<regle name="rgLiaisonPPACS5ITIAtemp" codeValue1="codeQLiPP5" comparaison="SUP" nombre="0">
+				</regle>
+				<regle name="LiaisonPPACS5ITIA" code1="codeITIA" operande ="AND" code2="rgliaison5ITIAtemp">
+				<Message text="Impossible de fournir des liasons PPACS avec un coffret ITI aérien"/>
+				</regle>
+				
+				<regle name="rgLiaisonPPACS10ITIAtemp" codeValue1="codeQLiPP10" comparaison="SUP" nombre="0">
+				</regle>
+				<regle name="rgLiaisonPPACS10ITIA" code1="codeITIA" operande ="AND" code2="rgliaison10ITIAtemp">
+				<Message text="Impossible de fournir des liasons PPACS avec un coffret ITI aérien"/>
+				</regle>
+				
+			</Regles>
+	  </Produit>
+	</Produits>

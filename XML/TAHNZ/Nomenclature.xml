@@ -1,0 +1,62 @@
+<?xml version="1.0"?>
+<Nomenclature versionXML="1.0">
+<Produit nameProduit="TAHNZ"> 
+    <ComposantsConfiguration>
+      <RefFGS>
+	  <Composant id="01" name="BOITIER TAHNZ SANS OPTION IND J" refFG="RZ00031.COMP" prixU="432.57"/>
+	  <Composant id="02" name="BOITIER TAHNZ AVEC OPTION MODEM RADIO IND J" refFG="RZ00032.COMP" prixU="559.65"/>
+	  <Composant id="03" name="ADAPTATEUR N FEMELLE/SMA MALE" refFG="ER80095.COMP" prixU="3.85"/>
+	  <Composant id="04" name="ANTENNE DIRECTIVE 900/1800MHZ 9DBI CONNECTEUR SMA FEMELLE" refFG="ER80098.COMP" prixU="39.33"/>
+	  <Composant id="05" name="ANTENNE VERTICALE 900/1800MHZ 2,15DBI" refFG="ER80098.COMP" prixU="27.39"/>
+	  <Composant id="06" name="ANTENNE GSM OMNIDIRECTIONNELLE AVEC PACKAGING AVEC CABLE 10 mètres" refFG="ER80137.COMP" prixU="22.10"/>
+      <Composant id="07" name="CORDON N MALE / N MALE 20m CABLE RG213" refFG="CC60032.COMP" prixU="61.29"/>
+	  <Composant id="08" name="CORDON FME FEMELLE / N FEMELLE 0,1m CABLE RG58" refFG="CC60034.COMP" prixU="13.29"/>
+	  <Composant id="09" name="CARTE INTERFACE SMR Ind A" refFG="MC50017.COMP" prixU="51.40"/>
+	  <Composant id="10" name="CABLE INTERFACE 12m Ind A5" refFG="MC30022.COMP" prixU="55.09"/>
+	  <Composant id="11" name="CABLE INTERFACE STACCATO 0,25m Ind A5" refFG="MC30023.COMP" prixU="26.58"/>
+	  <Composant id="12" name="CABLE INTERFACE TALCO CS80 0,25m Ind A5" refFG="MC30025.COMP" prixU="22.64"/>
+	  <Composant id="13" name="CABLE INTERFACE ALCATEL 922x0,25m Ind A5" refFG="MC30024.COMP" prixU="72.00"/>
+	  </RefFGS>
+      <AchatAffaire>
+      </AchatAffaire>
+    </ComposantsConfiguration>
+
+    <BaseCommune>
+    </BaseCommune>
+
+    <CodeProduits>
+	 <code name="codeAlcatel">
+	<Composant id="13" action="add" quantité="1"/>
+	<Composant id="02" action="add" quantité="1"/>
+	<Composant id="09" action="add" quantité="1"/>
+	<Composant id="10" action="add" quantité="1"/>
+      </code>
+	 <code name="codeSagem">
+	<Composant id="12" action="add" quantité="1"/>
+	<Composant id="02" action="add" quantité="1"/>
+	<Composant id="09" action="add" quantité="1"/>
+	<Composant id="10" action="add" quantité="1"/>
+      </code>
+	  	 <code name="codeMotorola">
+	<Composant id="11" action="add" quantité="1"/>
+	<Composant id="02" action="add" quantité="1"/>
+	<Composant id="09" action="add" quantité="1"/>
+	<Composant id="10" action="add" quantité="1"/>
+      </code>
+	  	 <code name="codeGSM">
+	<Composant id="01" action="add" quantité="1"/>
+      </code>
+	  <code name="codePack">
+	<Composant id="06" action="add" quantité="1"/>
+	<Composant id="03" action="add" quantité="1"/>
+      </code>
+	  <code name="codeLED">
+      </code>
+	  </CodeProduits>
+    
+
+    <ReglesCode><!-- Ici rélge1 et régle2 permettent d'ajouter la bonne carte alim lors de la sélection par l'utilisateur de l'option redondence alim-->
+    </ReglesCode>
+
+</Produit> 
+</Nomenclature>
